@@ -1,0 +1,21 @@
+﻿################################################################################
+# Ce fichier .gitignore a été automatiquement créé par Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/MicroserviceBarebone.Api.WebApp/bin/Debug/netcoreapp2.2
+/MicroserviceBarebone.Api.WebApp/obj/Debug/netcoreapp2.2
+/MicroserviceBarebone.Api.WebApp/obj
+/Src/Common/MicroserviceBarebone.Common/bin/Debug/netcoreapp2.2
+/Src/Common/MicroserviceBarebone.Common/obj
+/Src/Core/MicroserviceBarebone.Application/bin/Debug/netcoreapp2.2
+/Src/Core/MicroserviceBarebone.Application/obj
+/Src/Core/MicroserviceBarebone.Domain/bin/Debug/netcoreapp2.2
+/Src/Core/MicroserviceBarebone.Domain/obj
+/Src/Infrastructure/MicroserviceBarebone.Infrastructure/bin/Debug/netcoreapp2.2
+/Src/Infrastructure/MicroserviceBarebone.Infrastructure/obj
+/Src/Infrastructure/MicroserviceBarebone.Persistance/bin/Debug/netcoreapp2.2
+/Src/Infrastructure/MicroserviceBarebone.Persistance/obj
+/Tests/MicroserviceBarebone.Application.Tests/bin/Debug/netcoreapp2.2
+/Tests/MicroserviceBarebone.Application.Tests/obj/Debug/netcoreapp2.2
+/Tests/MicroserviceBarebone.Application.Tests/obj
