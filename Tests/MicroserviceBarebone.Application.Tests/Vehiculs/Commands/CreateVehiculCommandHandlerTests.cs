@@ -40,7 +40,7 @@ namespace MicroserviceBarebone.Application.Tests.Vehiculs.Commands
                 .Returns(Task.CompletedTask);
 
             _commandHandler = new CreateVehiculCommandHandler(_repo.Object, 
-                //_notificationService.Object, 
+                _notificationService.Object, 
                 _mediator.Object);
 
         }

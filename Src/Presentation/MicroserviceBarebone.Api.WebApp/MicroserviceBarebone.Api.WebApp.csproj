@@ -13,8 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Src\Core\MicroserviceBarebone.Application\MicroserviceBarebone.Application.csproj" />
-    <ProjectReference Include="..\Src\Infrastructure\MicroserviceBarebone.Infrastructure\MicroserviceBarebone.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Core\MicroserviceBarebone.Application\MicroserviceBarebone.Application.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\MicroserviceBarebone.Infrastructure\MicroserviceBarebone.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

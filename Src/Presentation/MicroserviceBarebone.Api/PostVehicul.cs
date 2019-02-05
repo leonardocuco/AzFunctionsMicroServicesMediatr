@@ -15,7 +15,6 @@ using System.Threading.Tasks;
 
 namespace MicroserviceBarebone.Api
 {
-    [DependencyInjectionConfig(typeof(DIConfig))]
     public static class PostVehicul
     {
         private static IMediator _mediator;
