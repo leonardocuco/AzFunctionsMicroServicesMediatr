@@ -12,6 +12,7 @@ using MediatR;
 using MicroserviceBarebone.Application.Vehiculs.Commands.CreateVehicul;
 using MicroserviceBarebone.Api.DependencyInjection;
 using System.Threading.Tasks;
+using System;
 
 namespace MicroserviceBarebone.Api
 {
@@ -28,8 +29,13 @@ namespace MicroserviceBarebone.Api
             {
                 string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
                 dynamic data = JsonConvert.DeserializeObject(requestBody);
+                if(data is null)
+                {
+                    throw new ArgumentNullException("Request Body");
+                }
 
                 var mediator = _mediator ?? MediatorBuilder.Build();
+
                 var res = await mediator.Send(new CreateVehiculCommand()
                 {
                     VehiculId = data.vehiculId,
@@ -41,6 +47,10 @@ namespace MicroserviceBarebone.Api
             catch (MicroserviceBarebone.Application.Exceptions.ValidationException e)
             {
                 return (ActionResult)new BadRequestObjectResult(e.Failures);
+            }
+            catch(Exception e)
+            {
+                return (ActionResult)new BadRequestObjectResult(e.Message);
             }
         }
     }
