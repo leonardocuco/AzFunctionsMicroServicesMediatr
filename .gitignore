@@ -21,3 +21,5 @@
 /Tests/MicroserviceBarebone.Application.Tests/obj
 /Src/Presentation/MicroserviceBarebone.Api.WebApp/bin/Debug/netcoreapp2.2
 /Src/Presentation/MicroserviceBarebone.Api.WebApp/obj
+/Tests/MicroservicesBArebone.Api.Tests/MicroserviceBarebone.Api.Tests/bin/Debug/netcoreapp2.2
+/Tests/MicroservicesBArebone.Api.Tests/MicroserviceBarebone.Api.Tests/obj
