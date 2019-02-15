@@ -4,6 +4,18 @@
     <AzureFunctionsVersion>v2</AzureFunctionsVersion>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="Built_at.txt" />
+    <None Remove="Commit_hash.txt" />
+    <None Remove="Deployed_at.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Built_at.txt" />
+    <EmbeddedResource Include="Commit_hash.txt" />
+    <Content Include="Deployed_at.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Autofac" Version="4.2.1" />
     <PackageReference Include="AzureFunctions.Autofac" Version="3.0.6" />
     <PackageReference Include="FluentValidation" Version="8.1.3" />

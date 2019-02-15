@@ -31,7 +31,7 @@ namespace MicroserviceBarebone.Api.Tests
             _mediator = new Mock<IMediator>();
 
             //Remplace the static mediator of PostVehicul (No DependecyInjection on Azure Functions)
-            PostVehicul._mediator = _mediator.Object;
+            VehiculsFunctions._mediator = _mediator.Object;
         }
 
 
@@ -57,7 +57,7 @@ namespace MicroserviceBarebone.Api.Tests
             #endregion
 
             #region Act
-            var res = await PostVehicul.Run(request.Object, _logger.Object);
+            var res = await VehiculsFunctions.RunPost(request.Object, _logger.Object);
             #endregion
 
             #region Assert
@@ -88,7 +88,7 @@ namespace MicroserviceBarebone.Api.Tests
             #endregion
 
             #region Act
-            var res = await PostVehicul.Run(request.Object, _logger.Object);
+            var res = await VehiculsFunctions.RunPost(request.Object, _logger.Object);
             #endregion
 
             #region Assert
